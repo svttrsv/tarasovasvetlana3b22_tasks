@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ежедневник</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-header">
+    <h1 class="logo">Ежедневник</h1>
+    <p class="tagline">Добавляй задачи и управляй своим днём</p>
+  </div>
+
+  <div class="container">
+    <div class="panel">
+      <h2 class="panel-title">Новая задача</h2>
+      <form id="task-form">
+        <div class="form-row">
+          <label for="task-title">Название задачи *</label>
+          <input id="task-title" type="text" required placeholder="Например: Позвонить другу">
+          <div class="field-error" id="title-error"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="task-desc">Описание</label>
+          <textarea id="task-desc" rows="3" placeholder="Коротко опиши задачу (необязательно)"></textarea>
+        </div>
+
+      <div class="form-actions">
+        <button id="btn-add" type="button" class="btn primary">Добавить</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="panel">
+      <h2 class="panel-title">Список задач</h2>
+      <div id="task-list" class="cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

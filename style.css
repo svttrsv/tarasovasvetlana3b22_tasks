@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+.app-header {
+  background: #4a90e2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.tagline {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.panel-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.field-error {
+  color: red;
+  font-size: 13px;
+  min-height: 14px;
+}
+
+.form-actions {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #4a90e2;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #357abd;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card-title {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.card-desc {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.card-actions {
+  text-align: right;
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  color: #555;
+  background: #eee;
+}
+
+/* Простая адаптивность */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
